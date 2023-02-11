@@ -38,12 +38,14 @@ struct SheetMyPokemonView: View {
                 Text("Add to my pokemon")
                     .foregroundColor(.blue)
                     .font(.headline)
-                    .padding(20)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 10.0)
                     .background(Color.white.cornerRadius(12))
             })
+            .padding(.horizontal, 20.0)
         }
         .padding()
-        .frame(height: 100, alignment: .bottom)
+        .frame(height: 200, alignment: .bottom)
     }
     
     func saveToEntities(text: String) {

@@ -13,12 +13,17 @@ struct MyPokemonView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack {
                 List {
                     ForEach(myVM.savedMyPoke) { entiti in
                         Text(entiti.name ?? "No Name")
+                            .onTapGesture {
+                                myVM.updateMyPokeData(entity: entiti)
+                            }
                     }
+                    .onDelete(perform: myVM.deleteData)
                 }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("My Pokemon")
         }

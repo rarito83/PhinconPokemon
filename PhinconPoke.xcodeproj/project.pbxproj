@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FA1EC1E02994DB8900BF5D94 /* DetailPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1DF2994DB8900BF5D94 /* DetailPokemon.swift */; };
-		FA1EC1E329950DB500BF5D94 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E229950DB500BF5D94 /* Helpers.swift */; };
 		FA1EC1E52995309900BF5D94 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E42995309900BF5D94 /* PokemonViewModel.swift */; };
 		FA1EC1E72995311F00BF5D94 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E62995311F00BF5D94 /* ApiService.swift */; };
 		FA1EC1E92995534700BF5D94 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E82995534700BF5D94 /* PokemonDetailView.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		FA1EC1DF2994DB8900BF5D94 /* DetailPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemon.swift; sourceTree = "<group>"; };
-		FA1EC1E229950DB500BF5D94 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		FA1EC1E42995309900BF5D94 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		FA1EC1E62995311F00BF5D94 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		FA1EC1E82995534700BF5D94 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
@@ -56,14 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA1EC1E129950DA000BF5D94 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FA1EC1E229950DB500BF5D94 /* Helpers.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		FAD93863299488B300C99232 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +73,6 @@
 		FAD9386E299488B300C99232 /* PhinconPoke */ = {
 			isa = PBXGroup;
 			children = (
-				FA1EC1E129950DA000BF5D94 /* Utils */,
 				FAD938802994890800C99232 /* ViewModels */,
 				FAD9387F2994890100C99232 /* Services */,
 				FAD9387E299488FA00C99232 /* Views */,
@@ -217,7 +206,6 @@
 				FA1EC1E92995534700BF5D94 /* PokemonDetailView.swift in Sources */,
 				FA1EC21629975A8A00BF5D94 /* SheetMyPokemonView.swift in Sources */,
 				FA1EC2112997519A00BF5D94 /* MyPokemonViewModel.swift in Sources */,
-				FA1EC1E329950DB500BF5D94 /* Helpers.swift in Sources */,
 				FAD938822994893800C99232 /* PokemonCard.swift in Sources */,
 				FAD938842994913C00C99232 /* SplashView.swift in Sources */,
 				FAD93870299488B300C99232 /* PhinconPokeApp.swift in Sources */,

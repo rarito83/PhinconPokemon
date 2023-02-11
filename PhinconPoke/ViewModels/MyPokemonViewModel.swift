@@ -50,4 +50,18 @@ class MyPokemonViewModel: ObservableObject {
             print("Error save data... \(error)")
         }
     }
+    
+    func deleteData(index: IndexSet) {
+        guard let index = index.first else { return }
+        let ent = savedMyPoke[index]
+        container.viewContext.delete(ent)
+        saveData()
+    }
+    
+    func updateMyPokeData(entity: MyPokemonEntity) {
+        let current = entity.name ?? ""
+        let new = current + "!"
+        entity.name = new
+        saveData()
+    }
 }

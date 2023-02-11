@@ -31,9 +31,9 @@ struct PokemonCard: View {
 
                 Text("\(pokemon.name.capitalized)")
                     .font(.system(size: 20, weight: .bold, design: .monospaced))
-                    .padding(.all, 20)
+                    .padding(.horizontal, 10)
                     .frame(width: 160, height: 40)
-                    .border(Color.green)
+                    .border(Color.gray)
                     .onAppear {
                         let loadedData = UserDefaults.standard.string(forKey: imageLink)
 
