@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct MyPokemonView: View {
+    
+    @StateObject var myVM = MyPokemonViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(spacing: 20) {
+                List {
+                    ForEach(myVM.savedMyPoke) { entiti in
+                        Text(entiti.name ?? "No Name")
+                    }
+                }
+            }
+            .navigationTitle("My Pokemon")
+        }
     }
 }
 

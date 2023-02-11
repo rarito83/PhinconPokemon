@@ -20,8 +20,8 @@ struct PokemonDetailView: View {
             backgroundColor.edgesIgnoringSafeArea(.all)
             VStack {
                 PokemonCard(pokemon: pokemon)
-                VStack(spacing: 10) {
-                    Text("**ID : \(pokemonVM.pokemonDetails?.id ?? 0)")
+                VStack(spacing: 20) {
+                    Text("**ID** : \(pokemonVM.pokemonDetails?.id ?? 0)")
                     Text("**Weight**: \(pokemonVM.formatHW(value: pokemonVM.pokemonDetails?.weight ?? 0)) KG")
                     Text("**Height**: \(pokemonVM.formatHW(value: pokemonVM.pokemonDetails?.height ?? 0)) M")
 //                    Text("**Type**:\(pokemonVM.pokemonDetails?.types ?? [TypeElement])")
@@ -29,7 +29,7 @@ struct PokemonDetailView: View {
                     Spacer(minLength: 20)
                     Button(action: {
                         self.title = "CATCHED POKE"
-                        self.isCatched = catchedPokemon()
+                        isCatched = catchedPokemon()
                     }, label: {
                         Text("catch".uppercased())
                             .padding(.horizontal)
@@ -42,7 +42,9 @@ struct PokemonDetailView: View {
                                     .shadow(radius: 12)
                             )
                     })
-                    .disabled(self.isCatched)
+                    .sheet(isPresented: $isCatched, content:{
+                        SheetMyPokemonView()
+                    })
                 }
                 .padding()
             }

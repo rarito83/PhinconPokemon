@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var pokemonVM = PokemonViewModel()
-    @State private var showAccount = false
     @State private var numberOfColumns = 2
     let spacing: CGFloat = 0
     

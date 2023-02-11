@@ -12,8 +12,10 @@
 		FA1EC1E52995309900BF5D94 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E42995309900BF5D94 /* PokemonViewModel.swift */; };
 		FA1EC1E72995311F00BF5D94 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E62995311F00BF5D94 /* ApiService.swift */; };
 		FA1EC1E92995534700BF5D94 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC1E82995534700BF5D94 /* PokemonDetailView.swift */; };
-		FA1EC20C29965B3900BF5D94 /* PokemonTypeIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC20B29965B3900BF5D94 /* PokemonTypeIView.swift */; };
 		FA1EC20F2997489C00BF5D94 /* MyPokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC20E2997489C00BF5D94 /* MyPokemonView.swift */; };
+		FA1EC2112997519A00BF5D94 /* MyPokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC2102997519A00BF5D94 /* MyPokemonViewModel.swift */; };
+		FA1EC2142997549C00BF5D94 /* MyPokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC2122997549C00BF5D94 /* MyPokemon.xcdatamodeld */; };
+		FA1EC21629975A8A00BF5D94 /* SheetMyPokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC21529975A8A00BF5D94 /* SheetMyPokemonView.swift */; };
 		FAD93870299488B300C99232 /* PhinconPokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9386F299488B300C99232 /* PhinconPokeApp.swift */; };
 		FAD93872299488B300C99232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD93871299488B300C99232 /* ContentView.swift */; };
 		FAD93874299488B500C99232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD93873299488B500C99232 /* Assets.xcassets */; };
@@ -29,8 +31,10 @@
 		FA1EC1E42995309900BF5D94 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		FA1EC1E62995311F00BF5D94 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		FA1EC1E82995534700BF5D94 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
-		FA1EC20B29965B3900BF5D94 /* PokemonTypeIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTypeIView.swift; sourceTree = "<group>"; };
 		FA1EC20E2997489C00BF5D94 /* MyPokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPokemonView.swift; sourceTree = "<group>"; };
+		FA1EC2102997519A00BF5D94 /* MyPokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPokemonViewModel.swift; sourceTree = "<group>"; };
+		FA1EC2132997549C00BF5D94 /* MyPokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPokemon.xcdatamodel; sourceTree = "<group>"; };
+		FA1EC21529975A8A00BF5D94 /* SheetMyPokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetMyPokemonView.swift; sourceTree = "<group>"; };
 		FAD9386C299488B300C99232 /* PhinconPoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhinconPoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD9386F299488B300C99232 /* PhinconPokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhinconPokeApp.swift; sourceTree = "<group>"; };
 		FAD93871299488B300C99232 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			children = (
 				FAD938882994A03200C99232 /* Pokemon.swift */,
 				FA1EC1DF2994DB8900BF5D94 /* DetailPokemon.swift */,
+				FA1EC2122997549C00BF5D94 /* MyPokemon.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,8 +120,8 @@
 				FAD93871299488B300C99232 /* ContentView.swift */,
 				FAD938832994913C00C99232 /* SplashView.swift */,
 				FA1EC1E82995534700BF5D94 /* PokemonDetailView.swift */,
-				FA1EC20B29965B3900BF5D94 /* PokemonTypeIView.swift */,
 				FA1EC20E2997489C00BF5D94 /* MyPokemonView.swift */,
+				FA1EC21529975A8A00BF5D94 /* SheetMyPokemonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1EC1E42995309900BF5D94 /* PokemonViewModel.swift */,
+				FA1EC2102997519A00BF5D94 /* MyPokemonViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -209,14 +215,16 @@
 			files = (
 				FAD93872299488B300C99232 /* ContentView.swift in Sources */,
 				FA1EC1E92995534700BF5D94 /* PokemonDetailView.swift in Sources */,
+				FA1EC21629975A8A00BF5D94 /* SheetMyPokemonView.swift in Sources */,
+				FA1EC2112997519A00BF5D94 /* MyPokemonViewModel.swift in Sources */,
 				FA1EC1E329950DB500BF5D94 /* Helpers.swift in Sources */,
-				FA1EC20C29965B3900BF5D94 /* PokemonTypeIView.swift in Sources */,
 				FAD938822994893800C99232 /* PokemonCard.swift in Sources */,
 				FAD938842994913C00C99232 /* SplashView.swift in Sources */,
 				FAD93870299488B300C99232 /* PhinconPokeApp.swift in Sources */,
 				FA1EC1E72995311F00BF5D94 /* ApiService.swift in Sources */,
 				FA1EC20F2997489C00BF5D94 /* MyPokemonView.swift in Sources */,
 				FA1EC1E02994DB8900BF5D94 /* DetailPokemon.swift in Sources */,
+				FA1EC2142997549C00BF5D94 /* MyPokemon.xcdatamodeld in Sources */,
 				FA1EC1E52995309900BF5D94 /* PokemonViewModel.swift in Sources */,
 				FAD938892994A03200C99232 /* Pokemon.swift in Sources */,
 			);
@@ -419,6 +427,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA1EC2122997549C00BF5D94 /* MyPokemon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA1EC2132997549C00BF5D94 /* MyPokemon.xcdatamodel */,
+			);
+			currentVersion = FA1EC2132997549C00BF5D94 /* MyPokemon.xcdatamodel */;
+			path = MyPokemon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAD93864299488B300C99232 /* Project object */;
 }
